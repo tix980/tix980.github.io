@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive record player</title>
+    <meta name="viewport" content = "width = device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c277f8812a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <div class="page-container">
+        <div id="video-player">
+          <!-- img link:https://lh3.googleusercontent.com/S4hujYHbzkotY2CnC5KUwRbaj1ED2BRzgaTLSl324HAU0yhJaus3cfPPxnZguJTxGbh4xQ=s163-->
+          <img src="image/frame.png" id="video-frame" alt="golden frame">
+          <!-- img link:https://media.istockphoto.com/photos/theater-stage-with-golden-curtains-picture-id1223200150?k=6&m=1223200150&s=612x612&w=0&h=3pnNjfcXEUpqxHglAkpyELHriJ5Km__Q1fN1e-6ZEaM=-->
+          <video id="video-background" width="696" height ="386" poster="image/default.jpg" loop>
+            <source src ="video/Rainbow_Nebula.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="players" class="flex-container">
+          <div id="record-player">
+            <div id="chicken"></div>
+            <!--Disc picture link:data:image/jpeg;base64,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-->
+            <img src="image/Disc.png" id="music-disc" alt="music disc">
+            <!--Needle picture link:https://lh3.googleusercontent.com/VqAR4KIzRk-_g-7fDyfeWi45_v7q9vRPBdsp0m3DKG_P9Mv06rPJnLIY904huj3fi3We=s85-->
+            <img src="image/needle.png" id="record-player-needle" alt="record player needle">
+            <div id="record-player-base"></div>
+            <div id="buttons" class="flex-container">
+              <div id="play-button"></div>
+              <div id="pause-button"></div>
+            </div>
+          </div>
+          <div id="music-player" class="flex-container2">
+            <div id="song-list">
+              <!-- songs are from:https://www.bensound.com/-->
+              <div id="song-one" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Actionable - Bensound</div>
+                <audio src="music/bensound-actionable.mp3" class="song"></audio>
+              </div>
+              <div id="song-two" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Better Days - Bensound</div>
+                <audio src="music/bensound-betterdays.mp3" class="song"></audio>
+              </div>
+              <div id="song-three" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Brazil Samba - Bensound</div>
+                <audio src="music/bensound-brazilsamba.mp3" class="song"></audio>
+              </div>
+              <div id="song-four" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Energy - Bensound</div>
+                <audio src="music/bensound-energy.mp3" class="song"></audio>
+              </div>
+              <div id="song-five" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Epic - Bensound</div>
+                <audio src="music/bensound-epic.mp3" class="song"></audio>
+              </div>
+              <div id="song-six" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Inspire - Bensound</div>
+                <audio src="music/bensound-inspire.mp3" class="song"></audio>
+              </div>
+              <div id="song-seven" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Photo Album - Bensound</div>
+                <audio src="music/bensound-photoalbum.mp3" class="song"></audio>
+              </div>
+              <div id="song-eight" class="flex-container">
+                <button class="playBtn"><i class="fas fa-play "></i></button>
+                <div class ="song-name">Piano Moment - Bensound</div>
+                <audio src="music/bensound-pianomoment.mp3" class="song"></audio>
+              </div>
+            </div>
+            <div id="dancing-notes" style="display:none;">
+              <!--dancing notes link: data:image/jpeg;base64,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-->
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+              <img src="image/music-note.png" class="notes">
+            </div>
+            <div id="dancing-notes-two" style="display:none;">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+              <img src="image/music-note.png" class="notes-two">
+            </div>
+            <div id="dancing-notes-three" style="display:none;">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+              <img src="image/music-note.png" class="notes-three">
+            </div>
+            <div id="dancing-notes-four"  style="display:none;">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+              <img src="image/music-note.png" class="notes-four">
+            </div>
+            <div id="dancing-notes-five" style="display:none;">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+              <img src="image/music-note.png" class="notes-five">
+            </div>
+            <div id="dancing-notes-six" style="display:none;">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+              <img src="image/music-note.png" class="notes-six">
+            </div>
+            <div id="dancing-notes-seven" style="display:none;">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+              <img src="image/music-note.png" class="notes-seven">
+            </div>
+            <div id="dancing-notes-eight" style="display:none;">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+              <img src="image/music-note.png" class="notes-eight">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
