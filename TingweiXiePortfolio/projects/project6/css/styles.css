@@ -1,0 +1,63 @@
+#header{
+  border-bottom: 1px solid blue;
+}
+
+h1,h2{
+  color:darkblue;
+}
+
+body{
+  font: normal 1em/1.6 "Trebuchet MS",Trebuchet,Tahoma,Arial,sans-serif;
+  background-color:#D292DE;
+}
+
+p{
+  color:#36331C;
+}
+
+a, a:link{
+  color:green;
+}
+
+a:visited{
+  color:purple;
+}
+
+a:hover{
+  color:blue;
+}
+
+a:active{
+  color:yellow;
+}
+
+form{
+  background-color:#761AF5;
+  width:25%;
+  border:0.25em solid black;
+  border-radius:1em;
+}
+
+label,input{
+  display:block;
+}
+
+label{
+  font-family:Arial,sans-serif;
+  color:white;
+}
+
+#Agreement,#legend{
+  color:lightgray;
+}
+
+#button{
+  margin-top:2em;
+  padding:0.25em;
+}
+
+footer{
+  border-top:0.1em dashed black;
+  margin-top:26em;
+  padding-top:3em;
+}

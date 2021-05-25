@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Streaming Service Subscription Form</h1>
+    </header>
+    <main id ="main">
+      <h2>Please fill in the following form</h2>
+      <p>If you have any question, please <a id="click" href="#">Click here</a></p>
+      <form id ="form" action="form.html" method="post">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" placeholder="Type your password">
+        </div>
+        <div>
+          <label for="re-enter">Re-enter your password</label>
+          <input type="text" id="re-enter" name="re-enter" placeholder="Re-enter your password">
+        </div>
+        <fieldset id="fieldset">
+          <legend id="legend">Please Select Your Plan</legend>
+          <input type="radio" id="weekly-plan" name="plans" value="weekly">
+          <label for="weekly-plan">$9.90/Weekly</label>
+          <input type="radio" id="monthly-plan" name="plans" value="monthly">
+          <label for="monthly-plan">$29.90/Monthly</label>
+          <input type="radio" id="yearly-plan" name="plans" value="yearly">
+          <label for="yearly-plan">69.90/Yearly</label>
+        </fieldset>
+        <button id="button">Sign Up</button>
+        <p id="Agreement">By signing up you agree to our <a href="#">Terms of Use</a>
+        and have read and understood our <a href="#">Privacy Policy</a></p>
+      </form>
+    </main>
+    <footer id="footer">
+      <div>©Streaming Service, 2021.</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+/* SET UP */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html{
+  box-sizing: border-box;
+}
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin:0;
+  font:normal 20px "Josefin Sans",sans-serif;
+  background-color: #f4f3ee;
+}
+
+.page-container{
+  max-width:1200px;
+  margin: 0 auto;
+}
+
+.hidden{
+  position:absolute;
+  left:-900px;
+}
+
+.flex-container{
+  display:flex;
+  flex-flow:row wrap;
+}
+
+/* Header */
+#header{
+  position:relative;
+  background-color: #bcb8b1;
+}
+
+#header > .page-container{
+  padding: 21px 76px 19px 76px;
+  position:relative;
+}
+
+/* Main Navigation */
+.menu-toggle{
+  position:absolute;
+  left:-900px;
+}
+
+.main-menu{
+  top:42px;
+  right:0;
+  position:absolute;
+  text-transform: uppercase;
+}
+
+.main-menu li{
+  display:inline-block;
+  margin-right:35px;
+  font-weight:bold;
+}
+
+.main-menu a{
+  text-decoration: none;
+  color:black;
+}
+
+.main-menu a:hover{
+  color:red;
+}
+
+.main-menu a:visited{
+  color:purple;
+}
+
+#main >.page-container{
+  position:relative;
+}
+
+/* About Me Section */
+#tingwei-image{
+  flex:1 0 0;
+}
+
+#bio{
+  flex:1.5 0 0;
+}
+
+#tingwei-image{
+  padding: 65px 0 34px 79px;
+}
+
+#bio{
+  margin-right: 120px;
+  line-height: 2.3em;
+  margin-top: 60px;
+}
+
+#bio h1{
+  text-transform: uppercase;
+}
+
+/* Portfolio Section */
+#portfolio{
+  padding-left:65px;
+  margin-top:42px;
+}
+
+#portfolio h2{
+  text-transform: uppercase;
+}
+
+#portfolio img{
+  margin:0 35px 36px 0;
+}
+
+/* Contact me form */
+form{
+  margin:58px 0 82px 136px;
+  border:1px solid black;
+  border-radius:10px;
+  width:907px;
+  background:#aea79a;
+  border-radius:21px;
+}
+
+form h2{
+  padding-left:383px;
+  font-size:30px;
+}
+
+form input{
+  width:156px;
+}
+
+#message{
+  width:100%;
+}
+
+#contact-row-one{
+  padding:22px 0 16px 133px;
+  font-weight: bold;
+}
+
+#contact-row-two{
+  padding:0 0 11px 133px;
+  font-weight: bold;
+}
+
+#name, #phone{
+  margin-right:156px;
+}
+
+#topic-section label{
+  margin-right:5px;
+}
+
+#message-section label{
+  margin-left:404px;
+  font-weight: bold;
+}
+
+#message{
+  width:508px;
+  margin-left:208px;
+  margin-top:17px;
+}
+
+#btn{
+  border:none;
+  width:173px;
+  margin:15px 0 25px 353px;
+  padding:10px 51px 9px 62px;
+  border-radius:12.64px;
+  font-weight:bold;
+}
+
+/* footer */
+#copyright{
+  padding-left:420px;
+  padding-bottom:12px;
+}
+
+/* Mobile Layout  768px*/
+@media screen and (max-width:768px){
+  #tingwei-image{
+    margin-left:150px;
+  }
+
+  #bio{
+    width:100%;
+    margin-left:76px;
+    margin-top: auto;
+  }
+
+
+  #bio h1{
+    padding-left:170px;
+  }
+
+  #portfolio{
+    padding-left: 200px;
+  }
+  #portfolio h2{
+    padding:0 0 24px 55px;
+  }
+
+  #contact-form{
+    width:618px;
+    margin:45px 76px 83px 76px;
+  }
+
+  form h2{
+    padding-left:260px;
+  }
+  
+  form input{
+    width:108px;
+  }
+
+  #contact-row-one{
+    padding:14px 0 11px 90px;
+  }
+  
+  #contact-row-two{
+    padding-left:90px;
+  }
+
+  #name, #phone{
+    margin-right:91px;
+  }
+  
+  #message-section label{
+    margin-left:276px;
+  }
+
+  #message{
+    width:390px;
+    margin-left:138px;
+  }
+  #btn{
+    margin-left:239px;
+    padding:7px 34px;
+  }
+
+  #copyright{
+    padding:25px 0 25px 200px;
+  }
+}
+
+/* Mobile Layout  360px*/
+@media screen and (max-width:360px){
+  #header > .page-container {
+    padding: 21px 76px 19px 52px;
+    position: relative;
+  }
+  .menu-toggle{
+    top:60px;
+    left:0;
+    margin-left: 265px;
+  }
+
+  .main-menu{
+    background-color:#eee;
+    position:absolute;
+    width:1px;
+    height:1px;
+    left:-10000px;
+  }
+
+  .main-menu.show-small{
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top:42px;
+  }
+
+  .main-menu li{
+    display:block;
+  }
+
+  #tingwei-image {
+    padding: 65px 0 34px 52px;
+    margin:0;
+  }
+
+  #bio h1{
+    padding-left:75px;
+  }
+
+  #bio{
+    margin:0;
+  }
+
+  #bio p{
+    margin: 11px 0 88px 11px;
+  }
+
+  #portfolio{
+    padding-left:17px;
+  }
+
+  #portfolio img {
+    margin: 0 0 36px 0;
+}
+
+  #contact-form {
+    width: 300px;
+    margin: 60px 0 60px 35px;
+}
+
+  form h2{
+    padding-left: 89px;
+  }
+
+  #name-section label, #phone-section label{
+    margin-right:25px;
+  }
+
+  #email-section label{
+    margin-right: 30px;
+  }
+
+  #topic-section label{
+    margin-right: 35px;
+  }
+  #contact-row-one{
+    padding: 0 20px 3px 20px;
+    line-height: 60px;
+  }
+
+  #contact-row-two {
+    padding: 0 20px 19px 20px;
+    line-height: 60px;
+  }
+  
+  #name,#phone{
+    margin: 0 0 10px 0;
+    width: 153px;
+  }
+
+  #email,#topic{
+    width: 153px;
+  }
+
+  #name-section, #phone-section{
+    width:100%;
+  }
+  #email-section,#topic-section{
+    flex:1 0 100%;
+  }
+
+  #message-section label{
+    margin-left:95px;
+  }
+
+  #message {
+    width: 245px;
+    height: 70px;
+    margin: 10px 0 0 30px;
+  }
+
+  #btn{
+    margin: 7px 0 12px 57px;
+  }
+
+  #copyright{
+    padding-left:42px;
+    font-size:15px;
+  }
+}
