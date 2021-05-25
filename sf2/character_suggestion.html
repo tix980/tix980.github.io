@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Character Suggestion Machine</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content = "width = device-width">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-container">
+        <div id="logo-message">
+          <img src="images/sf2/SF2-logo.png" alt="street fighter 2 logo" id="sf2-logo">
+          <!--https://pixlanim8r.files.wordpress.com/2014/03/world_map_dots.png-->
+          <img src="images/sf2/world_map_dots.png" alt="world map" id="banner">
+          <h1 id="banner-title">SELECT YOUR CHARACTER!!</h1>
+          <div id="map-dot"></div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="page-container">
+        <form action="#" method="POST" id="character-form" name="characterForm">
+          <h2 id="form-title">Character Suggestion Form</h2>
+          <div id="name-box">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="please enter your name"><span class="error"></span>
+          </div>
+          <div id="Type-box">
+            <label for="select-type">Type</label>
+            <select id="select-type" name="select_type">
+              <option value="default">Select a weight type</option>
+              <option value="light weight">Light Weight</option>
+              <option value="heavy weight">Heavy Weight </option>
+              <option value="Normal">Normal</option>
+            </select><span class="error"></span>
+          </div>
+          <div id="combat-box">
+            <label for="select-combat">Combat style</label>
+            <select id="select-combat" name="select_combat">
+              <option value="default">Select a combat style</option>
+              <option value="close range">Close range</option>
+              <option value="long range">Long range </option>
+              <option value="balanced">Balanced</option>
+            </select><span class="error"></span>
+          </div>
+          <div id="stats-box">
+            <label for="select-stats">Stats</label>
+            <select id="select-stats" name="select_stats">
+              <option value="default">Select the stats that you prefer</option>
+              <option value="health">Health</option>
+              <option value="power">Power</option>
+              <option value="mobility">Mobility</option>
+              <option value="techniques">Techniques</option>
+              <option value="range">Range</option>
+            </select><span class="error"></span>
+          </div>
+          <button id="btn" name="btn">Submit</button>
+        </form>
+        <a href="character_suggestion.html" id="returnBtn">Return to main page</a>
+        <div id="result">
+          <div class ="resultMsg" id="resultMsgOne"></div>
+          <div id="result-one">
+            <!--Images are from https://streetfighter.fandom.com/wiki/Category:Street_Fighter_II_Characters-->
+            <img src="#" class = "picture"  alt="character-pic" width = "300">
+            <!--Videos are from https://www.youtube.com/user/drewtonyz -->
+            <iframe src="#" class = "video" width="500" height="300"></iframe>
+          </div>
+          <div class ="resultMsg"  id="resultMsgTwo"></div>
+          <div id="result-two" class="flex-container">
+            <img src="#" class = "picture" id="picture-2"  alt="character-pic" width = "300">
+            <iframe src="#" class = "video" id = "video-2" width="500" height="300"></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="page-container">
+        <div id="copy-right">&copy; Copyright SF2 character suggestion form, 2021.</div>
+      </div>
+    </footer>
+  </body>
+</html>
