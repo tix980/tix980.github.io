@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Blog</title>
+    <meta name="food blog page" content="recommandation of desserts">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="page-container">
+      <header id="header">
+        <h2>Welcome To My Food Blog</h2>
+        <!-- Picture is from"https://br.pinterest.com/pin/659355201689824639/"-->
+        <img src = "image/foodlogo.png" alt="food logo" id="food-logo"  width="100">
+        <nav id="link-menu">
+          <h3 class="hidden">Main navigation</h3>
+          <ul id="links">
+            <li><a href="#">Main page</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class ="banner">
+        <!-- Picture is from"https://pixabay.com/photos/candy-gummib%C3%A4rchen-delicious-1499082/"-->
+        <img src = "image/banner2.jpg" alt="dessert banner" id="dessert-banner" height = "350">
+      </div>
+      <main id="main">
+        <article class="article">
+          <h1>Today I will introduce some of the best dessert stores in Toronto</h1>
+          <p>I hope you are like me who is extremely with desserts, then wake up on the second day to 
+          feel guilty about all the desserts that we have consumed the day before. Lucky for you today,
+          I will introduce some dessert shops that you will forget in your life.
+          </p>
+          <!-- Picture is from"https://www.instagram.com/p/CKmRulsBFKv/"-->
+          <h3>Hattendo cream bun shop</h3>
+          <img src="image/creamBun.jpg" alt="chocolate cream bun" width="500" height="300">
+          <p>Just look at this bun, it looks so creamy and delicious. If not for the ongoing pandemic,
+              I would love to this place every day. There are so many exotic flavors of buns at this store,
+              such as "Pumpkin Cream",  "Chestnut Cream", "Custard Cream", and "Azuki Bean". This place also
+              comes out with some special menu items each month. For example, if you worry about what to give 
+              your significant one a valentine's gift. You can also order 6 Bites of Love Cream Buns Set. 
+              They dip their signature cream buns into high-quality pink chocolate. This gift would capture
+              your loved one's heart in no time. If you would to know more about this place, you should 
+              <a href="https://www.hattendo.ca/">Click here</a> to check the website</p>
+          <!-- Picture is from "https://www.instagram.com/p/CKmRulsBFKv/"-->
+          <h3>Hazukido Bakery shop</h3>
+          <img src="image/Truffle.jpg" alt="truffle crab crossant" width="500" height="400">
+          <p>If you like Hattendo Cream Bakery, then I can make sure you like Hazukido Bakery too. 
+            They sell freshly baked croissants, but with the Hattendo cream bun fillings. They also 
+            sell croissants that are with seafood toppings, such as "Truffle crab meat" and "Cod Roe".
+            You probably have heard about this place, that's because it only opens two months ago.
+            If you would to know more about this place, you should <a href="https://www.hazukido.ca/">Click here</a> to 
+            check the website</p>
+          <!-- Picture is from "https://www.daango.com/shop"-->
+          <h3>Daan Go Cake Club</h3>
+          <img src="image/cheese.jpg" alt="cheese cake"  height="300" width="500">
+          <p>If you are the person that cares not only about the taste, but also the look of a dessert, 
+            then Daan Go Cake Club would be perfect for you. There are many different designs of cakes there, 
+            and the best thing about these designs is that you will never guess their taste. For example, you might 
+            think that the cake in the picture above tastes like real cheese, but it actually resembles bananas.
+            Therefore, if you are interested in impressing your friends and loved ones. You should defintely
+            check this place. <a href="https://www.daango.com/">Click here</a> to look for more information.</p>
+        </article>    
+        <section id="comment-form">
+          <form action="foodblog.html" method="post">
+            <h3>Please Comment Here</h3>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter Your Name Here">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter Your Email Here">
+            </div>
+            <div>
+              <label for="comment"> </label>
+              <textarea id="comment" name="comment" maxlength="500" 
+              placeholder="Enter yor Comment Here" rows="7" cols="40"></textarea>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      <aside id="side-bar">
+        <div id ="title">
+            <span class="fas fa-utensils logo" aria-hidden ="true"></span><span class ="hidden"></span>
+            <h3>Recommandation</h3>
+        </div>
+        <div id="recommandation1">
+          <!-- Picture is from "https://ihalo-krunch.business.site/-->
+          <img src="image/IhaloIcecream.JPG" alt="Ihalo Ice cream" width ="200" id="Ihalo">
+          <p>If you love to know other dessert shops, please<a href="#" class="link"> Click here</a></p>
+        </div>
+        <div id="recommandation2">
+          <!-- Picture is from "https://cooking.nytimes.com/recipes/1018684-classic-tiramisu"-->
+          <img src="image/Tiramisu.jpg" alt="Tiramisu" width ="200" id="Tiramisu">
+          <p>If you are interested in making desserts, please<a href="#" class="link"> Click here</a></p>
+        </div>
+        <div id="recommandation3">
+          <!-- Picture is from "https://ny.eater.com/2019/9/11/20859446/tiger-sugar-opens-chinatown-manhattan-bubbleology-alcohol-nyc"-->
+          <img src="image/TigerSugarBubbleTea.jpg" alt="Tiger sugar Bubble Tea" width="200" height="150" id="Bubble-tea">
+          <p>Do you know what pairs the best desserts? Sweet Drinks!!<a href="#" class="link">Click here</a>
+          to find out best places for sweet drinks!</p>
+        </div>
+      </aside>
+      <footer id="footer">
+        <div>©FoodBlog, 2021.</div>
+      </footer>
+    </div>
+  </body>
+</html>
